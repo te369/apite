@@ -1,0 +1,885 @@
+POST http://noway.ren/prod-api/system/user HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Content-Length: 200
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Content-Type: application/json;charset=UTF-8
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+{"deptId":105,"userName":"小A","nickName":"red 终结","password":"123456","phonenumber":"15300000000","email":"123@qq.com","sex":"0","status":"0","remark":"测试账号","postIds":[4],"roleIds":[2]}
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:16 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 69
+
+{"msg":"新增用户'小A'失败，手机号码已存在","code":500}
+
+------------------------------------------------------------------
+
+POST http://noway.ren/prod-api/system/user HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Content-Length: 200
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Content-Type: application/json;charset=UTF-8
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+{"deptId":105,"userName":"小A","nickName":"red 终结","password":"123456","phonenumber":"15300000010","email":"123@qq.com","sex":"0","status":"0","remark":"测试账号","postIds":[4],"roleIds":[2]}
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:25 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 33
+
+{"msg":"操作成功","code":200}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:25 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2159
+
+{"total":3,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:34 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2159
+
+{"total":3,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dept/treeselect HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:34 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 76
+
+{"msg":"操作成功","code":200,"data":[{"id":105,"label":"测试部门"}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dict/data/type/sys_normal_disable HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:34 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 682
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"正常状态","params":{},"dictCode":6,"dictSort":1,"dictLabel":"正常","dictValue":"0","dictType":"sys_normal_disable","cssClass":"","listClass":"primary","isDefault":"Y","status":"0","default":true},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"停用状态","params":{},"dictCode":7,"dictSort":2,"dictLabel":"停用","dictValue":"1","dictType":"sys_normal_disable","cssClass":"","listClass":"danger","isDefault":"N","status":"0","default":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dict/data/type/sys_user_sex HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:34 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 953
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"性别男","params":{},"dictCode":1,"dictSort":1,"dictLabel":"男","dictValue":"0","dictType":"sys_user_sex","cssClass":"","listClass":"","isDefault":"Y","status":"0","default":true},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"性别女","params":{},"dictCode":2,"dictSort":2,"dictLabel":"女","dictValue":"1","dictType":"sys_user_sex","cssClass":"","listClass":"","isDefault":"N","status":"0","default":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"性别未知","params":{},"dictCode":3,"dictSort":3,"dictLabel":"未知","dictValue":"2","dictType":"sys_user_sex","cssClass":"","listClass":"","isDefault":"N","status":"0","default":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/config/configKey/sys.user.initPassword HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:34 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Disposition: inline;filename=f.txt
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 27
+
+{"msg":"654321","code":200}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/menu/list HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/menu
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:36 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 27004
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1,"menuName":"系统管理","parentName":null,"parentId":0,"orderNum":"1","path":"system","component":null,"isFrame":"1","isCache":"0","menuType":"M","visible":"0","status":"0","perms":"","icon":"system","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":2,"menuName":"系统监控","parentName":null,"parentId":0,"orderNum":"2","path":"monitor","component":null,"isFrame":"1","isCache":"0","menuType":"M","visible":"0","status":"0","perms":"","icon":"monitor","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":3,"menuName":"系统工具","parentName":null,"parentId":0,"orderNum":"3","path":"tool","component":null,"isFrame":"1","isCache":"0","menuType":"M","visible":"0","status":"0","perms":"","icon":"tool","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":4,"menuName":"若依官网","parentName":null,"parentId":0,"orderNum":"4","path":"http://ruoyi.vip","component":null,"isFrame":"0","isCache":"0","menuType":"M","visible":"0","status":"0","perms":"","icon":"guide","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":100,"menuName":"用户管理","parentName":null,"parentId":1,"orderNum":"1","path":"user","component":"system/user/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:user:list","icon":"user","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":102,"menuName":"菜单管理","parentName":null,"parentId":1,"orderNum":"3","path":"menu","component":"system/menu/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:menu:list","icon":"tree-table","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":104,"menuName":"岗位管理","parentName":null,"parentId":1,"orderNum":"5","path":"post","component":"system/post/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:post:list","icon":"post","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":105,"menuName":"字典管理","parentName":null,"parentId":1,"orderNum":"6","path":"dict","component":"system/dict/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:dict:list","icon":"dict","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":106,"menuName":"参数设置","parentName":null,"parentId":1,"orderNum":"7","path":"config","component":"system/config/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:config:list","icon":"edit","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":107,"menuName":"通知公告","parentName":null,"parentId":1,"orderNum":"8","path":"notice","component":"system/notice/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"system:notice:list","icon":"message","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":108,"menuName":"日志管理","parentName":null,"parentId":1,"orderNum":"9","path":"log","component":"","isFrame":"1","isCache":"0","menuType":"M","visible":"0","status":"0","perms":"","icon":"log","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":109,"menuName":"在线用户","parentName":null,"parentId":2,"orderNum":"1","path":"online","component":"monitor/online/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:online:list","icon":"online","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":110,"menuName":"定时任务","parentName":null,"parentId":2,"orderNum":"2","path":"job","component":"monitor/job/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:job:list","icon":"job","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":111,"menuName":"数据监控","parentName":null,"parentId":2,"orderNum":"3","path":"druid","component":"monitor/druid/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:druid:list","icon":"druid","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":112,"menuName":"服务监控","parentName":null,"parentId":2,"orderNum":"4","path":"server","component":"monitor/server/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:server:list","icon":"server","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":113,"menuName":"缓存监控","parentName":null,"parentId":2,"orderNum":"5","path":"cache","component":"monitor/cache/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:cache:list","icon":"redis","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":114,"menuName":"表单构建","parentName":null,"parentId":3,"orderNum":"1","path":"build","component":"tool/build/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"tool:build:list","icon":"build","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":115,"menuName":"代码生成","parentName":null,"parentId":3,"orderNum":"2","path":"gen","component":"tool/gen/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"tool:gen:list","icon":"code","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":116,"menuName":"系统接口","parentName":null,"parentId":3,"orderNum":"3","path":"swagger","component":"tool/swagger/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"tool:swagger:list","icon":"swagger","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1001,"menuName":"用户查询","parentName":null,"parentId":100,"orderNum":"1","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1002,"menuName":"用户新增","parentName":null,"parentId":100,"orderNum":"2","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1003,"menuName":"用户修改","parentName":null,"parentId":100,"orderNum":"3","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1004,"menuName":"用户删除","parentName":null,"parentId":100,"orderNum":"4","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1005,"menuName":"用户导出","parentName":null,"parentId":100,"orderNum":"5","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1006,"menuName":"用户导入","parentName":null,"parentId":100,"orderNum":"6","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:import","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1007,"menuName":"重置密码","parentName":null,"parentId":100,"orderNum":"7","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:user:resetPwd","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1013,"menuName":"菜单查询","parentName":null,"parentId":102,"orderNum":"1","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:menu:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1014,"menuName":"菜单新增","parentName":null,"parentId":102,"orderNum":"2","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:menu:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1015,"menuName":"菜单修改","parentName":null,"parentId":102,"orderNum":"3","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:menu:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1016,"menuName":"菜单删除","parentName":null,"parentId":102,"orderNum":"4","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:menu:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1021,"menuName":"岗位查询","parentName":null,"parentId":104,"orderNum":"1","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:post:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1022,"menuName":"岗位新增","parentName":null,"parentId":104,"orderNum":"2","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:post:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1023,"menuName":"岗位修改","parentName":null,"parentId":104,"orderNum":"3","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:post:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1024,"menuName":"岗位删除","parentName":null,"parentId":104,"orderNum":"4","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:post:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1025,"menuName":"岗位导出","parentName":null,"parentId":104,"orderNum":"5","path":"","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:post:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1026,"menuName":"字典查询","parentName":null,"parentId":105,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:dict:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1027,"menuName":"字典新增","parentName":null,"parentId":105,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:dict:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1028,"menuName":"字典修改","parentName":null,"parentId":105,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:dict:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1029,"menuName":"字典删除","parentName":null,"parentId":105,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:dict:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1030,"menuName":"字典导出","parentName":null,"parentId":105,"orderNum":"5","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:dict:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1031,"menuName":"参数查询","parentName":null,"parentId":106,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:config:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1032,"menuName":"参数新增","parentName":null,"parentId":106,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:config:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1033,"menuName":"参数修改","parentName":null,"parentId":106,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:config:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1034,"menuName":"参数删除","parentName":null,"parentId":106,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:config:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1035,"menuName":"参数导出","parentName":null,"parentId":106,"orderNum":"5","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:config:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1036,"menuName":"公告查询","parentName":null,"parentId":107,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:notice:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1037,"menuName":"公告新增","parentName":null,"parentId":107,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:notice:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1038,"menuName":"公告修改","parentName":null,"parentId":107,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:notice:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1039,"menuName":"公告删除","parentName":null,"parentId":107,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"system:notice:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":500,"menuName":"操作日志","parentName":null,"parentId":108,"orderNum":"1","path":"operlog","component":"monitor/operlog/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:operlog:list","icon":"form","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":501,"menuName":"登录日志","parentName":null,"parentId":108,"orderNum":"2","path":"logininfor","component":"monitor/logininfor/index","isFrame":"1","isCache":"0","menuType":"C","visible":"0","status":"0","perms":"monitor:logininfor:list","icon":"logininfor","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1046,"menuName":"在线查询","parentName":null,"parentId":109,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:online:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1047,"menuName":"批量强退","parentName":null,"parentId":109,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:online:batchLogout","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1048,"menuName":"单条强退","parentName":null,"parentId":109,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:online:forceLogout","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1049,"menuName":"任务查询","parentName":null,"parentId":110,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1050,"menuName":"任务新增","parentName":null,"parentId":110,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:add","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1051,"menuName":"任务修改","parentName":null,"parentId":110,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1052,"menuName":"任务删除","parentName":null,"parentId":110,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1053,"menuName":"状态修改","parentName":null,"parentId":110,"orderNum":"5","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:changeStatus","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1054,"menuName":"任务导出","parentName":null,"parentId":110,"orderNum":"7","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:job:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1055,"menuName":"生成查询","parentName":null,"parentId":115,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1056,"menuName":"生成修改","parentName":null,"parentId":115,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:edit","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1058,"menuName":"导入代码","parentName":null,"parentId":115,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:import","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1057,"menuName":"生成删除","parentName":null,"parentId":115,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1059,"menuName":"预览代码","parentName":null,"parentId":115,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:preview","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1060,"menuName":"生成代码","parentName":null,"parentId":115,"orderNum":"5","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"tool:gen:code","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1040,"menuName":"操作查询","parentName":null,"parentId":500,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:operlog:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1041,"menuName":"操作删除","parentName":null,"parentId":500,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:operlog:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1042,"menuName":"日志导出","parentName":null,"parentId":500,"orderNum":"4","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:operlog:export","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1043,"menuName":"登录查询","parentName":null,"parentId":501,"orderNum":"1","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:logininfor:query","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1044,"menuName":"登录删除","parentName":null,"parentId":501,"orderNum":"2","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:logininfor:remove","icon":"#","children":[]},{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:02","updateBy":null,"updateTime":null,"remark":null,"params":{},"menuId":1045,"menuName":"日志导出","parentName":null,"parentId":501,"orderNum":"3","path":"#","component":"","isFrame":"1","isCache":"0","menuType":"F","visible":"0","status":"0","perms":"monitor:logininfor:export","icon":"#","children":[]}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dict/data/type/sys_show_hide HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/menu
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:36 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 672
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"显示菜单","params":{},"dictCode":4,"dictSort":1,"dictLabel":"显示","dictValue":"0","dictType":"sys_show_hide","cssClass":"","listClass":"primary","isDefault":"Y","status":"0","default":true},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"隐藏菜单","params":{},"dictCode":5,"dictSort":2,"dictLabel":"隐藏","dictValue":"1","dictType":"sys_show_hide","cssClass":"","listClass":"danger","isDefault":"N","status":"0","default":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dict/data/type/sys_normal_disable HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/menu
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:36 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 682
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"正常状态","params":{},"dictCode":6,"dictSort":1,"dictLabel":"正常","dictValue":"0","dictType":"sys_normal_disable","cssClass":"","listClass":"primary","isDefault":"Y","status":"0","default":true},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"停用状态","params":{},"dictCode":7,"dictSort":2,"dictLabel":"停用","dictValue":"1","dictType":"sys_normal_disable","cssClass":"","listClass":"danger","isDefault":"N","status":"0","default":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/post/list?pageNum=1&pageSize=10 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/post
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:37 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 960
+
+{"total":4,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":1,"postCode":"ceo","postName":"董事长","postSort":"1","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":2,"postCode":"se","postName":"项目经理","postSort":"2","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":3,"postCode":"hr","postName":"人力资源","postSort":"3","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":4,"postCode":"user","postName":"普通员工","postSort":"4","status":"0","flag":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dict/data/type/sys_normal_disable HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/post
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:42:37 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 682
+
+{"msg":"操作成功","code":200,"data":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"正常状态","params":{},"dictCode":6,"dictSort":1,"dictLabel":"正常","dictValue":"0","dictType":"sys_normal_disable","cssClass":"","listClass":"primary","isDefault":"Y","status":"0","default":true},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:05","updateBy":null,"updateTime":null,"remark":"停用状态","params":{},"dictCode":7,"dictSort":2,"dictLabel":"停用","dictValue":"1","dictType":"sys_normal_disable","cssClass":"","listClass":"danger","isDefault":"N","status":"0","default":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10&userName=%E8%80%81%E6%9D%8E&phonenumber=153000000&status=0&params%5BbeginTime%5D=2021-06-01&params%5BendTime%5D=2021-06-03&page=1 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:01 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 53
+
+{"total":0,"rows":[],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10&page=1 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:08 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2159
+
+{"total":3,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dept/treeselect HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:14 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 76
+
+{"msg":"操作成功","code":200,"data":[{"id":105,"label":"测试部门"}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/ HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:15 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1324
+
+{"msg":"操作成功","code":200,"roles":[{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":"普通角色","params":{},"roleId":2,"roleName":"普通角色","roleKey":"common","roleSort":"2","dataScope":"3","menuCheckStrictly":true,"deptCheckStrictly":true,"status":"0","delFlag":"0","flag":false,"menuIds":null,"deptIds":null,"admin":false}],"posts":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":1,"postCode":"ceo","postName":"董事长","postSort":"1","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":2,"postCode":"se","postName":"项目经理","postSort":"2","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":3,"postCode":"hr","postName":"人力资源","postSort":"3","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":4,"postCode":"user","postName":"普通员工","postSort":"4","status":"0","flag":false}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dept/treeselect HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:26 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 76
+
+{"msg":"操作成功","code":200,"data":[{"id":105,"label":"测试部门"}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/ HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:43:26 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1324
+
+{"msg":"操作成功","code":200,"roles":[{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":"普通角色","params":{},"roleId":2,"roleName":"普通角色","roleKey":"common","roleSort":"2","dataScope":"3","menuCheckStrictly":true,"deptCheckStrictly":true,"status":"0","delFlag":"0","flag":false,"menuIds":null,"deptIds":null,"admin":false}],"posts":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":1,"postCode":"ceo","postName":"董事长","postSort":"1","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":2,"postCode":"se","postName":"项目经理","postSort":"2","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":3,"postCode":"hr","postName":"人力资源","postSort":"3","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":4,"postCode":"user","postName":"普通员工","postSort":"4","status":"0","flag":false}]}
+
+------------------------------------------------------------------
+
+POST http://noway.ren/prod-api/system/user HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Content-Length: 201
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Content-Type: application/json;charset=UTF-8
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+{"deptId":105,"userName":"red","nickName":"测试删除","password":"123456","phonenumber":"18200000000","email":"123@qq.com","sex":"2","status":"0","remark":"测试删除","postIds":[4],"roleIds":[2]}
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:10 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 68
+
+{"msg":"新增用户'red'失败，邮箱账号已存在","code":500}
+
+------------------------------------------------------------------
+
+POST http://noway.ren/prod-api/system/user HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Content-Length: 202
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Content-Type: application/json;charset=UTF-8
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+{"deptId":105,"userName":"red","nickName":"测试删除","password":"123456","phonenumber":"18200000000","email":"1234@qq.com","sex":"2","status":"0","remark":"测试删除","postIds":[4],"roleIds":[2]}
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:15 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 33
+
+{"msg":"操作成功","code":200}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10&page=1 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:15 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2884
+
+{"total":4,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:44:15","updateBy":null,"updateTime":null,"remark":"测试删除","params":{},"userId":111,"deptId":105,"userName":"red","nickName":"测试删除","email":"1234@qq.com","phonenumber":"18200000000","sex":"2","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/dept/treeselect HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:21 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 76
+
+{"msg":"操作成功","code":200,"data":[{"id":105,"label":"测试部门"}]}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/111 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:21 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2419
+
+{"msg":"操作成功","code":200,"roleIds":[2],"data":{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:44:15","updateBy":null,"updateTime":null,"remark":"测试删除","params":{},"userId":111,"deptId":105,"userName":"red","nickName":"测试删除","email":"1234@qq.com","phonenumber":"18200000000","sex":"2","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":101,"ancestors":null,"deptName":"测试部门","orderNum":"3","leader":"若依","phone":null,"email":null,"status":"0","delFlag":null,"parentName":null,"children":[]},"roles":[{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"roleId":2,"roleName":"普通角色","roleKey":"common","roleSort":"2","dataScope":"3","menuCheckStrictly":false,"deptCheckStrictly":false,"status":"0","delFlag":null,"flag":false,"menuIds":null,"deptIds":null,"admin":false}],"roleIds":null,"postIds":null,"admin":false},"postIds":[4],"roles":[{"searchValue":null,"createBy":null,"createTime":"2021-01-12 09:12:01","updateBy":null,"updateTime":null,"remark":"普通角色","params":{},"roleId":2,"roleName":"普通角色","roleKey":"common","roleSort":"2","dataScope":"3","menuCheckStrictly":true,"deptCheckStrictly":true,"status":"0","delFlag":"0","flag":false,"menuIds":null,"deptIds":null,"admin":false}],"posts":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":1,"postCode":"ceo","postName":"董事长","postSort":"1","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":2,"postCode":"se","postName":"项目经理","postSort":"2","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":3,"postCode":"hr","postName":"人力资源","postSort":"3","status":"0","flag":false},{"searchValue":null,"createBy":"admin","createTime":"2021-01-12 09:12:00","updateBy":null,"updateTime":null,"remark":"","params":{},"postId":4,"postCode":"user","postName":"普通员工","postSort":"4","status":"0","flag":false}]}
+
+------------------------------------------------------------------
+
+PUT http://noway.ren/prod-api/system/user HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Content-Length: 1085
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Content-Type: application/json;charset=UTF-8
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:44:15","updateBy":null,"updateTime":null,"remark":"测试删除\n测试修改","params":{},"userId":111,"deptId":105,"userName":"red","nickName":"测试删除","email":"1234@qq.com","phonenumber":"18200000000","sex":"2","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":101,"ancestors":null,"deptName":"测试部门","orderNum":"3","leader":"若依","phone":null,"email":null,"status":"0","delFlag":null,"parentName":null,"children":[]},"roles":[{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"roleId":2,"roleName":"普通角色","roleKey":"common","roleSort":"2","dataScope":"3","menuCheckStrictly":false,"deptCheckStrictly":false,"status":"0","delFlag":null,"flag":false,"menuIds":null,"deptIds":null,"admin":false}],"roleIds":[2],"postIds":[4],"admin":false,"password":""}
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:28 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 33
+
+{"msg":"操作成功","code":200}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10&page=1 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:29 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2898
+
+{"total":4,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:44:15","updateBy":null,"updateTime":null,"remark":"测试删除\n测试修改","params":{},"userId":111,"deptId":105,"userName":"red","nickName":"测试删除","email":"1234@qq.com","phonenumber":"18200000000","sex":"2","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
+DELETE http://noway.ren/prod-api/system/user/111 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Origin: http://noway.ren
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:33 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 33
+
+{"msg":"操作成功","code":200}
+
+------------------------------------------------------------------
+
+GET http://noway.ren/prod-api/system/user/list?pageNum=1&pageSize=10&page=1 HTTP/1.1
+Host: noway.ren
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37
+Referer: http://noway.ren/system/user
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: rememberMe=true; username=te123; password=gQWNDreixXuw7YxFjy2zLq5xg1pFdqefPIMdzIqVpzQf1sUApRM5ZUMJly7YDHXLQHZZfoKgqKkSmqMIFoizxw==; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyYjRkMDlkLTM0NTctNDFmOS1hZmI3LTY4ZGZlYTcwNjcxNSJ9.Utiymdvos0Nm5MXdczp6SCG75IxO9HSI1gokzfud2Y1j6BorY9-Ura4Lueb3CsyEQ1cgSqSA-rgNL515OKri4Q
+
+
+HTTP/1.1 200
+Server: nginx/1.17.10
+Date: Fri, 04 Jun 2021 07:44:33 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 2159
+
+{"total":3,"rows":[{"searchValue":null,"createBy":"admin","createTime":"2021-01-16 10:33:27","updateBy":null,"updateTime":null,"remark":null,"params":{},"userId":101,"deptId":105,"userName":"te123","nickName":"te1","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-05-28 08:20:55","updateBy":null,"updateTime":null,"remark":"修改信息1","params":{},"userId":102,"deptId":105,"userName":"小i","nickName":"te369","email":"","phonenumber":"","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false},{"searchValue":null,"createBy":"te123","createTime":"2021-06-04 07:42:25","updateBy":null,"updateTime":null,"remark":"测试账号","params":{},"userId":110,"deptId":105,"userName":"小A","nickName":"red 终结","email":"123@qq.com","phonenumber":"15300000010","sex":"0","avatar":"","salt":null,"status":"0","delFlag":"0","loginIp":"","loginDate":null,"dept":{"searchValue":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"params":{},"deptId":105,"parentId":null,"ancestors":null,"deptName":"测试部门","orderNum":null,"leader":"若依","phone":null,"email":null,"status":null,"delFlag":null,"parentName":null,"children":[]},"roles":[],"roleIds":null,"postIds":null,"admin":false}],"code":200,"msg":"查询成功"}
+
+------------------------------------------------------------------
+
