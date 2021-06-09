@@ -71,7 +71,6 @@ class MockCase:
     def default_dict(self,original_dict):
         """
         先创建一个临时字典,判断value值得类型,再用原始字典做更新操作,调用Random_Data 的值
-        :param params_dict: 传递一个原始参数字典
         :param original_dict: 原始字典
         :return: 返回格式为{key:<class 'NoneType'>}
         """
