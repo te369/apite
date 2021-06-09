@@ -34,6 +34,6 @@ class MysqlBase:
 
 
 
-mysql1 = MysqlBase(host="47.101.187.47",user="root",password="ying9366",sql_str="SELECT Host,User FROM user").execute()
-s = asyncio.run(mysql1)
-print(s)
+# mysql1 = MysqlBase(host="",user="",password="",sql_str="SELECT Host,User FROM user").execute()
+# s = asyncio.run(mysql1)
+# print(s)
