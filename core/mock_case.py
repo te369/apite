@@ -79,7 +79,7 @@ class MockCase:
         temporary_dict = dict(zip(key, value)) # 临时字典
 
         for v, k in temporary_dict.items():
-            if k == type(int):
+            if k == int:
                 original_dict.update({v: self.random_data.positive_number})
 
             if k == float:
