@@ -1,4 +1,4 @@
-# apite 接口测试框架展示
+# apite 接口测试框架展示 [python3.7+]
 测试项目：若依RuoYi管理系统[前后端分离]  
 测试网址：http://noway.ren/  
 测试账号: te123   
