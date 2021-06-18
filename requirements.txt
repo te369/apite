@@ -15,4 +15,5 @@ pytest-xdist==2.2.1
 requests==2.25.1
 ruamel.yaml==0.17.7
 threadpool-executor-shrink-able==1.4
+simplejson==3.17.2
 
