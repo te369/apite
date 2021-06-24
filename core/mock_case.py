@@ -15,7 +15,7 @@ from .tool.handle_yaml import HandleYaml
 class Random_Data:
     """ Random 随机数据"""
     def __init__(self):
-        self.float =  random.random() # 1以内浮点小数
+        self.mockfloat =  random.random() # 1以内浮点小数
         self.two_decimal = round(random.uniform(1, 10),2) # 10以内2位浮点小数
         self.status = random.randint(0,4) # 系统状态
         self.positive_number = random.randint(1,100) # 正数0到100
@@ -83,7 +83,7 @@ class MockCase:
                 original_dict.update({v: self.random_data.positive_number})
 
             if k == float:
-                original_dict.update({v: self.random_data.float})
+                original_dict.update({v: self.random_data.mockfloat})
 
             elif k == str:
                 original_dict.update({v: self.random_data.random_str})
